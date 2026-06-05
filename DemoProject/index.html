@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div id="progress"></div>
+<div id="particles"></div>
+
+<nav>
+  <div class="logo"><a href="#hero" class="logo">&lt;IS /&gt;</a> </div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#modules">Modules</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="avatar-wrap">
+    <div class="avatar-glow"></div>
+
+    <div class="speech-bubble" id="heroSpeech" aria-hidden="true">
+      <div class="speech-text">
+        Good day my name is Ikraam Sadek . I'm a lecturer at Belgium Campus itversity.<br/>
+        Here is some more information about me and what i do.
+      </div>
+    </div>
+
+    <svg id="avatar" width="200" height="220" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+
+      <!-- Blazer body -->
+      <rect x="38" y="128" width="124" height="85" rx="18" fill="#1e1e3a"/>
+      <!-- Jacket lapels left -->
+      <polygon points="100,140 76,128 65,158 100,150" fill="#2d2d5a"/>
+      <!-- Jacket lapels right -->
+      <polygon points="100,140 124,128 135,158 100,150" fill="#2d2d5a"/>
+      <!-- Button-up shirt underneath -->
+      <rect x="86" y="128" width="28" height="32" rx="3" fill="#e8e8f0"/>
+      <!-- Shirt buttons -->
+      <circle cx="100" cy="136" r="2" fill="#9090b0"/>
+      <circle cx="100" cy="143" r="2" fill="#9090b0"/>
+      <circle cx="100" cy="150" r="2" fill="#9090b0"/>
+      <!-- Collar points -->
+      <polygon points="100,133 87,128 91,142" fill="#d0d0e8"/>
+      <polygon points="100,133 113,128 109,142" fill="#d0d0e8"/>
+      <!-- Neck -->
+      <rect x="87" y="116" width="26" height="20" rx="6" fill="#b5722a"/>
+      <!-- Head -->
+      <ellipse cx="100" cy="96" rx="41" ry="43" fill="#b5722a"/>
+      <!-- Short dark hair -->
+      <ellipse cx="100" cy="58" rx="41" ry="17" fill="#110606"/>
+      <rect x="59" y="56" width="82" height="20" rx="3" fill="#110606"/>
+      <rect x="59" y="68" width="14" height="22" rx="4" fill="#1a0808"/>
+      <rect x="127" y="68" width="14" height="22" rx="4" fill="#1a0808"/>
+      <path d="M64 60 Q74 52 84 57 Q92 51 100 56 Q108 51 116 57 Q126 52 136 60" stroke="#1a0808" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M66 55 Q76 48 86 53 Q93 47 100 52 Q107 47 114 53 Q124 48 134 55" stroke="#110606" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <!-- Ears -->
+      <ellipse cx="59" cy="98" rx="7" ry="9" fill="#b5722a"/>
+      <ellipse cx="141" cy="98" rx="7" ry="9" fill="#b5722a"/>
+      <!-- Eyes white -->
+      <ellipse cx="85" cy="96" rx="9.5" ry="10.5" fill="white"/>
+      <ellipse cx="115" cy="96" rx="9.5" ry="10.5" fill="white"/>
+      <!-- Iris -->
+      <ellipse class="eye-l" cx="85" cy="97" rx="6" ry="7" fill="#110606"/>
+      <ellipse class="eye-r" cx="115" cy="97" rx="6" ry="7" fill="#110606"/>
+      <!-- Pupil shine -->
+      <circle cx="87" cy="95" r="2" fill="white"/>
+      <circle cx="117" cy="95" r="2" fill="white"/>
+      <!-- Eyebrows -->
+      <path d="M74 84 Q85 78 96 83" stroke="#110606" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <path d="M104 83 Q115 78 126 84" stroke="#110606" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <!-- Nose -->
+      <path d="M97 105 Q95 112 92 114 Q100 117 108 114 Q105 112 103 105" fill="#8a5018" opacity="0.35"/>
+      <ellipse cx="100" cy="107" rx="4.5" ry="5" fill="#8a5018" opacity="0.2"/>
+      <!-- Smile -->
+      <path d="M89 122 Q100 131 111 122" stroke="#8a4010" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <!-- Beard / moustache -->
+      <path d="M90 116 Q95 112 100 114 Q105 112 110 116" stroke="#3a1a08" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.55"/>
+      <ellipse cx="100" cy="125" rx="14" ry="7" fill="#3a1a08" opacity="0.3"/>
+      <path d="M72 108 Q68 116 70 124 Q76 130 85 132" stroke="#3a1a08" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.3"/>
+      <path d="M128 108 Q132 116 130 124 Q124 130 115 132" stroke="#3a1a08" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.3"/>
+      <rect x="63" y="104" width="8" height="18" rx="3" fill="#3a1a08" opacity="0.3"/>
+      <rect x="129" y="104" width="8" height="18" rx="3" fill="#3a1a08" opacity="0.3"/>
+      <circle cx="93" cy="124" r="1.3" fill="#3a1a08" opacity="0.35"/>
+      <circle cx="97" cy="127" r="1.2" fill="#3a1a08" opacity="0.3"/>
+      <circle cx="100" cy="128" r="1.3" fill="#3a1a08" opacity="0.35"/>
+      <circle cx="103" cy="127" r="1.2" fill="#3a1a08" opacity="0.3"/>
+      <circle cx="107" cy="124" r="1.3" fill="#3a1a08" opacity="0.35"/>
+      <!-- Arms -->
+      <rect x="33" y="138" width="22" height="50" rx="10" fill="#1e1e3a"/>
+      <rect x="145" y="138" width="22" height="50" rx="10" fill="#1e1e3a"/>
+      <!-- Shirt cuffs -->
+      <rect x="32" y="180" width="24" height="10" rx="5" fill="#d0d0e8"/>
+      <rect x="144" y="180" width="24" height="10" rx="5" fill="#d0d0e8"/>
+      <!-- Hands -->
+      <ellipse cx="44" cy="193" rx="10" ry="8" fill="#b5722a"/>
+      <ellipse cx="156" cy="193" rx="10" ry="8" fill="#b5722a"/>
+      <!-- Glow ring -->
+      <circle cx="100" cy="108" r="90" fill="none" stroke="#7c3aed" stroke-width="1" opacity="0.3" stroke-dasharray="6 4"/>
+    </svg>
+  </div>
+
+  <h1 data-text="Ikraam Sadek">Ikraam Sadek</h1>
+  <p class="tagline">Ready to go at it whenever_</p>
+  <p class="hero-sub">Lecturer · Developer · Adrenaline Adventurer<br/>Turning curious minds into capable coders.</p>
+  <a href="#about" class="cta-btn">Explore Portfolio ↓</a>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="fade-in">
+  <div class="section-title">// about.me</div>
+  <div class="section-line"></div>
+  <div id="about-wrap">
+    <div class="about-item">
+      <div class="about-icon">🎓</div>
+      <div>
+        <h3>Qualification</h3>
+        <p>Advanced Diploma in App Development, NQF-7 — Rosebank College</p>
+      </div>
+    </div>
+    <div class="about-item">
+      <div class="about-icon">💡</div>
+      <div>
+        <h3>Teaching Philosophy</h3>
+        <p>Engaging &amp; Interacting — learning happens through real conversation and doing.</p>
+      </div>
+    </div>
+    <div class="about-item">
+      <div class="about-icon">⚡</div>
+      <div>
+        <h3>Superpower</h3>
+        <p>Helpful &amp; Reliable — always in your corner when you need support.</p>
+      </div>
+    </div>
+    <div class="about-item">
+      <div class="about-icon">🪂</div>
+      <div>
+        <h3>Fun Fact</h3>
+        <p>Total adrenaline adventurer — the same energy goes into teaching!</p>
+      </div>
+    </div>
+    <div class="quote-block">
+      "After getting feedback, use it to do better." — Ikraam Sadek
+    </div>
+  </div>
+</section>
+
+<!-- MODULES -->
+<section id="modules" class="fade-in">
+  <div class="section-title">// modules.taught[]</div>
+  <div class="section-line"></div>
+  <div class="modules-grid">
+    <div class="module-card"><div class="module-code">PRG161</div><div class="module-name">Programming 1A</div></div>
+    <div class="module-card"><div class="module-code">PRG171</div><div class="module-name">Programming 1B</div></div>
+    <div class="module-card"><div class="module-code">PRG181</div><div class="module-name">Programming 1C</div></div>
+    <div class="module-card"><div class="module-code">PRG261</div><div class="module-name">Programming 2A</div></div>
+    <div class="module-card"><div class="module-code">PRG262</div><div class="module-name">Programming 2B</div></div>
+    <div class="module-card"><div class="module-code">PRG272</div><div class="module-name">Programming 2C</div></div>
+    <div class="module-card"><div class="module-code">PRG282</div><div class="module-name">Programming 2D</div></div>
+    <div class="module-card"><div class="module-code">SWT261</div><div class="module-name">Software Testing</div></div>
+    <div class="module-card"><div class="module-code">DBD171</div><div class="module-name">Databases 1B</div></div>
+    <div class="module-card"><div class="module-code">DBD181</div><div class="module-name">Databases 1C</div></div>
+    <div class="module-card"><div class="module-code">WPR161</div><div class="module-name">Web Programming</div></div>
+    <div class="module-card"><div class="module-code">INF271</div><div class="module-name">Informatics 2A</div></div>
+    <div class="module-card"><div class="module-code">INF281</div><div class="module-name">Informatics 2B</div></div>
+    <div class="module-card"><div class="module-code">PRL</div><div class="module-name">Programming Logic</div></div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="fade-in">
+  <div class="section-title">// skills.stack</div>
+  <div class="section-line"></div>
+  <div class="skills-grid">
+    <div class="skill-badge"><div class="skill-icon">💻</div>App Dev</div>
+    <div class="skill-badge"><div class="skill-icon">🗄️</div>Databases</div>
+    <div class="skill-badge"><div class="skill-icon">🌐</div>Web Dev</div>
+    <div class="skill-badge"><div class="skill-icon">🧪</div>Software Testing</div>
+    <div class="skill-badge"><div class="skill-icon">🔢</div>Prog. Logic</div>
+    <div class="skill-badge"><div class="skill-icon">🤝</div>Mentorship</div>
+    <div class="skill-badge"><div class="skill-icon">⚙️</div>OOP</div>
+    <div class="skill-badge"><div class="skill-icon">🛠️</div>Problem Solving</div>
+  </div>
+
+  <div class="funfact" style="margin-top:2rem;">
+    <div class="funfact-icon">🪂</div>
+    <div>
+      <h3>Did you know?</h3>
+      <p>When Ikraam isn't debugging code or igniting curiosity in students, they're chasing the next adrenaline rush. The same fearless energy powers the classroom.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TEACHING APPROACH -->
+<section id="approach" class="fade-in">
+  <div class="section-title">// teaching.approach()</div>
+  <div class="section-line"></div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.2rem;">
+    <div class="module-card" style="text-align:left;padding:1.4rem;">
+      <div style="font-size:1.8rem;margin-bottom:0.6rem;">🧩</div>
+      <h3 style="color:var(--cyan);font-family:monospace;margin-bottom:0.4rem;">Problem-First Learning</h3>
+      <p style="color:var(--muted);font-size:0.9rem;line-height:1.6;">Ikraam throws students into real problems before teaching theory — because the best way to understand a solution is to first feel the problem.</p>
+    </div>
+    <div class="module-card" style="text-align:left;padding:1.4rem;">
+      <div style="font-size:1.8rem;margin-bottom:0.6rem;">🔄</div>
+      <h3 style="color:var(--cyan);font-family:monospace;margin-bottom:0.4rem;">Feedback Loops</h3>
+      <p style="color:var(--muted);font-size:0.9rem;line-height:1.6;">Every submission is a conversation. Feedback isn't just a grade — it's a roadmap. Students are encouraged to iterate, improve, and resubmit.</p>
+    </div>
+    <div class="module-card" style="text-align:left;padding:1.4rem;">
+      <div style="font-size:1.8rem;margin-bottom:0.6rem;">💬</div>
+      <h3 style="color:var(--cyan);font-family:monospace;margin-bottom:0.4rem;">Open-Door Policy</h3>
+      <p style="color:var(--muted);font-size:0.9rem;line-height:1.6;">No question is too small. Ikraam believes accessibility is key — students should never feel stuck alone. Help is always one message away.</p>
+    </div>
+    <div class="module-card" style="text-align:left;padding:1.4rem;">
+      <div style="font-size:1.8rem;margin-bottom:0.6rem;">🚀</div>
+      <h3 style="color:var(--cyan);font-family:monospace;margin-bottom:0.4rem;">Industry-Aligned</h3>
+      <p style="color:var(--muted);font-size:0.9rem;line-height:1.6;">Content is always tied back to real-world dev practices. From version control to clean code principles — students graduate ready for the job market.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section id="timeline" class="fade-in">
+  <div class="section-title">// career.timeline[]</div>
+  <div class="section-line"></div>
+  <div style="position:relative;padding-left:2rem;border-left:2px solid rgba(124,58,237,0.3);">
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-year">🎓 Rosebank College</div>
+      <div class="tl-title">Advanced Diploma in App Development — NQF-7</div>
+      <div class="tl-desc">Specialized in application development, software engineering principles, and database design. Graduated with a strong foundation in both theory and practical development.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-year">💼 Early Career</div>
+      <div class="tl-title">Junior Developer & Tutor</div>
+      <div class="tl-desc">Started bridging the gap between industry and education — realizing that teaching was just as rewarding as building. Began mentoring peers informally before moving into lecturing.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-year">🏫 Lecturing</div>
+      <div class="tl-title">Full-Time Lecturer — Programming & Databases</div>
+      <div class="tl-desc">Took on a full lecturing role covering a wide range of modules — from first-year programming logic to second-year software testing and informatics. Known for high energy and hands-on sessions.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-year">📍 Present</div>
+      <div class="tl-title">Senior Lecturer & Mentor</div>
+      <div class="tl-desc">Currently teaching 14+ modules, mentoring student dev teams, and integrating modern tools like AI-assisted development into the curriculum. Always evolving, always engaging.</div>
+    </div>
+  </div>
+</section>
+
+<!-- STUDENT SHOUTOUTS -->
+<section id="shoutouts" class="fade-in">
+  <div class="section-title">// students.say()</div>
+  <div class="section-line"></div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.2rem;">
+    <div class="module-card" style="text-align:left;padding:1.4rem;">
+      <p style="color:var(--text);font-style:italic;line-height:1.7;margin-bottom:1rem;">"Ikraam never makes you feel dumb for asking questions. Best lecturer I've had — always available and always real with you."</p>
+      <span style="color:var(--accent);font-family:monospace;font-size:0.85rem;">— PRG261 Student</span>
+    </div>
+    <div class="module-card" style="text-align:left;padding:1.4rem;">
+      <p style="color:var(--text);font-style:italic;line-height:1.7;margin-bottom:1rem;">"The feedback I got on my projects actually helped me grow. Not just 'good job' — real, detailed advice I could act on."</p>
+      <span style="color:var(--accent);font-family:monospace;font-size:0.85rem;">— DBD181 Student</span>
+    </div>
+    <div class="module-card" style="text-align:left;padding:1.4rem;">
+      <p style="color:var(--text);font-style:italic;line-height:1.7;margin-bottom:1rem;">"His energy is unmatched. You can tell he actually loves what he does. Made me fall in love with programming."</p>
+      <span style="color:var(--accent);font-family:monospace;font-size:0.85rem;">— PRG161 Student</span>
+    </div>
+  </div>
+</section>
+
+<style>
+  .tl-item{position:relative;margin-bottom:2.2rem;padding-left:1.2rem;}
+  .tl-dot{position:absolute;left:-2.45rem;top:0.3rem;width:14px;height:14px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--cyan));box-shadow:0 0 10px rgba(124,58,237,0.6);}
+  .tl-year{font-family:monospace;font-size:0.85rem;color:var(--cyan);margin-bottom:0.3rem;}
+  .tl-title{font-weight:700;color:var(--text);margin-bottom:0.4rem;font-size:1rem;}
+  .tl-desc{color:var(--muted);font-size:0.9rem;line-height:1.6;}
+</style>
+
+<!-- CONTACT -->
+<section id="contact" class="fade-in">
+  <div class="section-title" style="text-align:center;">// connect.with(me)</div>
+  <div class="section-line" style="margin-inline:auto;"></div>
+  <p style="color:var(--muted);max-width:480px;margin:0 auto 1.5rem;line-height:1.7;">Got a question? Need guidance? Ikraam's always ready to engage. Drop a message and let's build something great together.</p>
+  <div class="contact-links">
+    <a href="#" class="contact-link" id="emailBtn">📧 Email</a>
+    <a href="https://www.linkedin.com/in/your-username" target="_blank" class="contact-link">💼 LinkedIn</a>
+    <a href="https://github.com/Slowmochris420/INL261--Milestone2" target="_blank" class="contact-link">🐙 GitHub</a>
+  </div>
+</section>
+
+<footer>&lt;built with 💜 by students | Ikraam Sadek Portfolio 2025 /&gt;</footer>
+
+<!-- Email Popup -->
+<div id="emailOverlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);backdrop-filter:blur(6px);z-index:999;align-items:center;justify-content:center;">
+  <div style="background:linear-gradient(135deg,#0d0d2b,#111127);border:1px solid rgba(124,58,237,0.4);border-radius:20px;padding:2rem;max-width:380px;width:90%;box-shadow:0 0 40px rgba(124,58,237,0.3);position:relative;animation:popIn 0.3s ease both;">
+    <button id="closePopup" style="position:absolute;top:1rem;right:1rem;background:none;border:none;color:#94a3b8;font-size:1.2rem;cursor:pointer;line-height:1;transition:color 0.2s;">✕</button>
+    <div style="text-align:center;margin-bottom:1.2rem;">
+      <div style="font-size:2.5rem;margin-bottom:0.5rem;">📧</div>
+      <h3 style="color:#e2e8f0;font-family:monospace;font-size:1.1rem;margin-bottom:0.3rem;">Get in Touch</h3>
+      <p style="color:#94a3b8;font-size:0.85rem;">Send Ikraam an email at Belgium Campus</p>
+    </div>
+    <div style="display:flex;align-items:center;gap:0.6rem;background:rgba(10,10,15,0.6);border:1px solid rgba(6,182,212,0.3);border-radius:10px;padding:0.75rem 1rem;">
+      <span id="emailText" style="color:#06b6d4;font-family:monospace;font-size:0.9rem;flex:1;word-break:break-all;">info@belgiumcampus.ac.za</span>
+      <button id="copyBtn" onclick="copyEmail()" style="background:linear-gradient(135deg,#7c3aed,#1a1aff);border:none;border-radius:7px;color:#fff;font-size:0.8rem;font-family:monospace;padding:0.4rem 0.8rem;cursor:pointer;white-space:nowrap;transition:transform 0.2s,box-shadow 0.2s;">Copy</button>
+    </div>
+    <div id="copyFeedback" style="text-align:center;margin-top:0.8rem;font-family:monospace;font-size:0.82rem;color:#06b6d4;height:1.1em;transition:opacity 0.3s;opacity:0;">✓ Copied to clipboard!</div>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+    
+</body>
+</html>
